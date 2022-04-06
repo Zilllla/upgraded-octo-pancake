@@ -96,7 +96,58 @@
 
           <!-- box B4  -->
           <div>
-            fill with stuff
+            <div class="accordion" id="collapseItems">
+              <!-- card 1 -->
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#itemOne" aria-expanded="true" aria-controls="itemOne">
+                      Button One
+                    </button>
+                  </h2>
+                </div>
+
+                <div id="itemOne" class="collapse show" aria-labelledby="headingOne" data-parent="#collapseItems">
+                  <div class="card-body">
+                    Content One
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 2 -->
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#itemTwo" aria-expanded="false" aria-controls="itemTwo">
+                      Button Two
+                    </button>
+                  </h2>
+                </div>
+
+                <div id="itemTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#collapseItems">
+                  <div class="card-body">
+                    Content Two
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 3 -->
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#itemThree" aria-expanded="false" aria-controls="itemThree">
+                      Button Three
+                    </button>
+                  </h2>
+                </div>
+
+                <div id="itemThree" class="collapse" aria-labelledby="headingThree" data-parent="#collapseItems">
+                  <div class="card-body">
+                    Content Three
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
