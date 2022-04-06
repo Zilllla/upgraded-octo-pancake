@@ -1,14 +1,112 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
-    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+
+    <title>Artscapy Artist Page</title>
   </head>
 
   <body>
 
+    <div class="container">
+      <div class="row">
+        <!-- left column- img, text below, etc... -->
+        <div class="col-8">
+          <!-- box A1 - img carousel -->
+          <div id="imgCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="LaLoteria_LaSirena.jpeg" alt="La Sirena; Billie Holiday Loteria">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="LaLoteria_LaDama.jpeg" alt="La Dama; Audrey Hepburn Loteria">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="LaLoteria_ElValiente.jpeg" alt="El Valiente; Bruce Lee Loteria">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#imgCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#imgCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
 
-    <script type="text/javascript" src="app.js"></script>
+          <!-- box A2 - img text -->
+          <div>
+            <h3>Come Back To</h3>
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+          </div>
+        </div>
+        <!-- right column- price, arist profile, etc... -->
+        <div class="col-4">
+          <!-- box B1 -->
+          <div>
+            <h4>La Lotería Series</h4>
+            <h6>Mexic-Arte Museum, Austin, Texas</h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+
+          <!-- box B2 - price -->
+          <div>
+            <h4>£50,000</h4>
+            <div class="text-light bg-dark text-center p-2 rounded">
+              Make Offer
+            </div>
+            <div id="buyBtn" class="text-light text-center my-1 p-2 rounded">
+              Buy
+            </div>
+          </div>
+
+          <!-- box B3 - artist info -->
+          <div class="mt-4">
+            <div class="text-light bg-dark text-center p-2 rounded">
+              Artist
+            </div>
+
+            <div class="row">
+              <!-- artist img -->
+              <div class="col-4">
+                <img src="erynz.jpg" class="rounded-circle w-100" />
+              </div>
+              <div class="col-8">
+                <small class="text-muted">Eryn Zavaleta</small>
+                <br />
+                <small class="text-muted">Austin, Texas, USA</small>
+              </div>
+            </div>
+
+            <div class="btn btn-primary w-100">
+              View Profile
+            </div>
+          </div>
+
+          <!-- box B4  -->
+          <div>
+            fill with stuff
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
   </body>
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="app.js"></script>
 </html>
