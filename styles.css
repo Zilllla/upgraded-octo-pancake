@@ -1,3 +1,31 @@
+body {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
 #buyBtn {
   background-color: #F76F33;
+}
+
+#imgBgColour {
+  background-color: #EDEDF1;
+}
+
+.artscapyBlueBg {
+  background-color: #374EC7;
+}
+
+.artscapyBlueBg:hover {
+  background-color: #242f72;
+}
+
+.artscapyBlueText {
+  color: #374EC7;
+}
+
+.artscapyBlueText:hover {
+  color: #242f72;
 }

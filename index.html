@@ -9,27 +9,41 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 
+    <!-- Google font for Poppins 400 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
     <title>Artscapy Artist Page</title>
   </head>
 
   <body>
 
+    <!-- header -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2">
+          <img src="artscapyLogo.png" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+
     <div class="container">
       <!-- row 1 -->
       <div class="row">
         <!-- top left column- img -->
-        <div class="col-8">
+        <div class="col-md-7 col-12 m-md-2">
           <!-- box A1 - img carousel -->
           <div id="imgCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100" src="LaLoteria_LaSirena.jpeg" alt="La Sirena; Billie Holiday Loteria">
+                <img class="d-block img-fluid mx-auto shadow" src="LaLoteria_LaSirena.jpeg" alt="La Sirena; Billie Holiday Loteria">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="LaLoteria_LaDama.jpeg" alt="La Dama; Audrey Hepburn Loteria">
+                <img class="d-block img-fluid mx-auto shadow" src="LaLoteria_LaDama.jpeg" alt="La Dama; Audrey Hepburn Loteria">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="LaLoteria_ElValiente.jpeg" alt="El Valiente; Bruce Lee Loteria">
+                <img class="d-block img-fluid mx-auto shadow" src="LaLoteria_ElValiente.jpeg" alt="El Valiente; Bruce Lee Loteria">
               </div>
             </div>
             <a class="carousel-control-prev" href="#imgCarousel" role="button" data-slide="prev">
@@ -44,11 +58,11 @@
 
         </div>
         <!-- right column- price, arist profile, etc... -->
-        <div class="col-4">
+        <div class="col-md-4 col-12 m-md-2">
           <!-- box B1 -->
           <div>
-            <h4>La Lotería Series</h4>
-            <h6>Mexic-Arte Museum, Austin, Texas</h6>
+            <h2>La Lotería Series</h2>
+            <h5>Mexic-Arte Museum, Austin, Texas</h5>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
@@ -57,12 +71,12 @@
           <!-- box B2 - price -->
           <div>
             <h4>£50,000</h4>
-            <div class="text-light bg-dark text-center p-2 rounded">
+            <button class="w-100 text-light bg-dark text-center p-2 rounded">
               Make Offer
-            </div>
-            <div id="buyBtn" class="text-light text-center my-1 p-2 rounded">
+            </button>
+            <button id="buyBtn" class="w-100 text-light text-center my-1 p-2 rounded">
               Buy
-            </div>
+            </button>
           </div>
 
         </div>
@@ -71,22 +85,34 @@
 
       <!-- row 2 -->
       <div class="row">
-        <div class="col-8">
-          <!-- box A2 - img text -->
+        <!-- bottom left column - about the art-->
+        <div class="col-md-7 col-12 m-md-2 mt-sm-3">
+          <!-- box A2 - about the art -->
           <div>
-            <h3>Come Back To</h3>
+            <h2>About the Art</h2>
             <p>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+              "Recently, I became inspired by a traditional Mexican game called “La Loteria”. Essentially, it is like bingo, but the cards themselves are what captivated me. Each one has a special title and image that has become iconic to the game. As I studied these cards, I started envisioning each traditional title, but with the unique twist of having a celebrity in sugar skull makeup instead of the original images. However, I didn’t want them to be random. They had to have meaning.
+            </p>
+            <p>
+              “La Sirena” means The Siren.  Traditionally, this card is represented by a mermaid.  However, I decided that the Siren of Song, Billie Holiday would be the best choice for this piece.  Often, when I paint, it is her voice that inspires me.  Her sugar skull makeup is markedly feminine with accents in blue to reflect her most famous genre. The heart near her mouth, signifies the source from which she sang.  A  tear drop pays tribute to her tragic, beautiful life.
+            </p>
+            <p>
+              “La Dama” means The Lady.  Of course, who better to represent this card than Audrey Hepburn, the lead actress of My Fair Lady.  For the purpose of the card, I chose her in a pose from Breakfast at Tiffany’s and designed her sugar skull makeup to reflect her delicate nature and, of course, in Tiffany-esque blue.
+            </p>
+            <p>
+              “El Valiente” means The Valiant. Bruce Lee.  What more can I say?  To me, he represents everything that a brave hero should be.  Paying tribute to his iconic film, Enter the Dragon, I used his sugar skull makeup to incorporate the scratches he receives on his cheeks while fighting in one of the most memorable scenes. I also gave a nod to his son, Brandon Lee, by using the inspiration of his eye makeup from The Crow as part of his father’s sugar skull design. Again, he is a manly man…so makeup is kept to a minimum and appears more as warpaint for this classic fighter.
+            </p>
+            <p class="float-right mr-2">
+              <i>- Eryn Zavaleta</i>
             </p>
           </div>
         </div>
 
-        <div class="col-4">
+        <!-- bottom right column - artist info, quotes  -->
+        <div class="col-md-4 col-12 m-md-2">
           <!-- box B3 - artist info -->
-          <div class="mt-4">
-            <div class="text-light bg-dark text-center p-2 rounded">
-              Artist
-            </div>
+          <div>
+            <h2>Artist</h2>
 
             <div class="row">
               <!-- artist img -->
@@ -94,33 +120,39 @@
                 <img src="erynz.jpg" class="rounded-circle w-100" />
               </div>
               <div class="col-8">
-                <small class="text-muted">Eryn Zavaleta</small>
-                <br />
-                <small class="text-muted">Austin, Texas, USA</small>
+                <p class="text-muted">Eryn Zavaleta</p>
+
+                <p class="text-muted">Austin, Texas, USA</p>
               </div>
             </div>
 
-            <div class="btn btn-primary w-100">
+            <button class="w-100 text-light text-center rounded p-2 artscapyBlueBg">
               View Profile
-            </div>
+            </button>
           </div>
 
-          <!-- box B4  -->
-          <div>
+          <!-- box B4  - quotes-->
+          <div class="mt-5">
+            <h2>Title Here</h2>
             <div class="accordion" id="collapseItems">
               <!-- card 1 -->
               <div class="card">
                 <div class="card-header" id="headingOne">
                   <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#itemOne" aria-expanded="true" aria-controls="itemOne">
-                      Button One
+                    <button class="btn btn-block text-left artscapyBlueText" type="button" data-toggle="collapse" data-target="#itemOne" aria-expanded="true" aria-controls="itemOne">
+                      I'm not sure what to include here
                     </button>
                   </h2>
                 </div>
 
-                <div id="itemOne" class="collapse show" aria-labelledby="headingOne" data-parent="#collapseItems">
+                <div id="itemOne" class="collapse" aria-labelledby="headingOne" data-parent="#collapseItems">
                   <div class="card-body">
-                    Content One
+                    <p>
+                      “‘Just get a job?’ Why don’t I strap on my job helmet and squeeze down into a job cannon, and fire off into job land, where jobs grow on jobbies?!”
+                    </p>
+                    <p class="float-right">
+                      - Charlie
+                    </p>
                   </div>
                 </div>
               </div>
@@ -129,15 +161,20 @@
               <div class="card">
                 <div class="card-header" id="headingTwo">
                   <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#itemTwo" aria-expanded="false" aria-controls="itemTwo">
-                      Button Two
+                    <button class="btn btn-block text-left collapsed artscapyBlueText" type="button" data-toggle="collapse" data-target="#itemTwo" aria-expanded="false" aria-controls="itemTwo">
+                      So I've made the executive decision
                     </button>
                   </h2>
                 </div>
 
                 <div id="itemTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#collapseItems">
                   <div class="card-body">
-                    Content Two
+                    <p>
+                       [Reading Charlie’s script] “Hello fellow American. This you should vote me. I leave power. Good. Thank you. Thank you. If you vote me, I’m hot.” What? “Taxes. They’ll be lower. Son. The democratic vote for me is right thing to do, Philadelphia. So do.”
+                    </p>
+                    <p class="float-right">
+                      - Dennis
+                    </p>
                   </div>
                 </div>
               </div>
@@ -146,15 +183,20 @@
               <div class="card">
                 <div class="card-header" id="headingThree">
                   <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#itemThree" aria-expanded="false" aria-controls="itemThree">
-                      Button Three
+                    <button class="btn btn-block text-left collapsed artscapyBlueText" type="button" data-toggle="collapse" data-target="#itemThree" aria-expanded="false" aria-controls="itemThree">
+                      To fill them with It's Always Sunny quotes
                     </button>
                   </h2>
                 </div>
 
                 <div id="itemThree" class="collapse" aria-labelledby="headingThree" data-parent="#collapseItems">
                   <div class="card-body">
-                    Content Three
+                    <p>
+                      "Hello, Charlie Kelly here, local business owner and cat enthusiast. Is your cat making too much noise all the time? Is your cat constantly stomping around driving you crazy? Is your cat clawing at your furniture? Think there’s no answer? You’re so stupid! There is! Kitten Mittens. Finally, there is an elegant, comfortable mitten for cats…. I couldn’t hear anything! Is your cat one-legged? Is your cat fat, skinny, or an in-between? That doesn’t matter! Cause one size fits all! Kitten Mittens! You’ll be smitten! So come on down to Paddy’s Pub. We’re the hoooooooommee of the original Kitten Mittens. Meeeeeeeeeeowwwww!"
+                    </p>
+                    <p class="float-right">
+                      - Charlie
+                    </p>
                   </div>
                 </div>
               </div>
@@ -168,6 +210,6 @@
   </body>
   <!-- bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
   <script type="text/javascript" src="app.js"></script>
 </html>
