@@ -6,8 +6,16 @@ h2 {
   text-decoration: underline;
 }
 
+#makeOffer:hover {
+  filter: brightness(0.5);
+}
+
 #buyBtn {
   background-color: #F76F33;
+}
+
+#buyBtn:hover {
+  filter: brightness(0.5);
 }
 
 #imgBgColour {
@@ -28,4 +36,13 @@ h2 {
 
 .artscapyBlueText:hover {
   color: #242f72;
+}
+
+#loginBtn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1.25px;
+  color: #141518;
+  margin-right: 25px;
 }

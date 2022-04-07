@@ -12,7 +12,7 @@
     <!-- Google font for Poppins 400 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
     <title>Artscapy Artist Page</title>
   </head>
@@ -21,9 +21,15 @@
 
     <!-- header -->
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-2">
+      <div class="row justify-content-between">
+        <div class="col-md-2 col-4">
           <img src="artscapyLogo.png" class="img-fluid" />
+        </div>
+        <div class="col-lg-2 col-4 mr-5">
+          <a href="https://artscapy.com/page/login" id="loginBtn">Log in</a>
+          <a href="https://artscapy.com/page/create-account">
+            <div class="w-100 text-light text-center rounded p-2 artscapyBlueBg">Sign up for free</div>
+          </a>
         </div>
       </div>
     </div>
@@ -71,12 +77,12 @@
           <!-- box B2 - price -->
           <div>
             <h4>£50,000</h4>
-            <button class="w-100 text-light bg-dark text-center p-2 rounded">
-              Make Offer
-            </button>
-            <button id="buyBtn" class="w-100 text-light text-center my-1 p-2 rounded">
-              Buy
-            </button>
+            <div class="w-100 bg-dark text-center p-2 rounded" id="makeOffer">
+              <a href="#" class="text-light">Make Offer</a>
+            </div>
+            <div id="buyBtn" class="w-100 text-center my-1 p-2 rounded">
+              <a href="#" class="text-light">Buy</a>
+            </div>
           </div>
 
         </div>
@@ -126,9 +132,9 @@
               </div>
             </div>
 
-            <button class="w-100 text-light text-center rounded p-2 artscapyBlueBg">
-              View Profile
-            </button>
+            <div class="w-100 text-center rounded p-2 artscapyBlueBg">
+              <a href="#" class="text-light">View Profile</a>
+            </div>
           </div>
 
           <!-- box B4  - quotes-->
